@@ -53,7 +53,7 @@
     function tick() {
       // 箱を回転させる
       box.rotation.x += 0.01;
-      box.rotation.y += Math.sin(0.01);
+      box.rotation.y = Math.sin(box.rotation.x);
 
       // レンダリング
       renderer.render(scene, camera);
